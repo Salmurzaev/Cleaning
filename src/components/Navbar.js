@@ -28,7 +28,7 @@ const Navbar = () => {
         </div>
         <div className=''>
           <button className='hidden md:block border border-green-600 px-4 py-1 rounded-md text-green-600 hover:bg-green-700 hover:text-white'>
-            Позвонить
+            +996 703 15 69 75
           </button>
         </div>
         {toggle ? (
