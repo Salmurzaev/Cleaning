@@ -18,7 +18,7 @@ export default function OrderForm({ setIsShowModal }) {
     } else {
       setPhoneNumberValid(true)
       axios
-        .post('https:/sec-order-27uv8ql1m-aidar41k.vercel.app/', {
+        .post('https://sec-order-27uv8ql1m-aidar41k.vercel.app', {
           phoneNumber,
           name
         })
