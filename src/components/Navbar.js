@@ -3,7 +3,6 @@ import React, { useState } from 'react'
 import { FiMenu } from 'react-icons/fi'
 import { AiOutlineClose } from 'react-icons/ai'
 import { AiOutlinePhone, AiOutlineWhatsApp } from 'react-icons/ai'
-
 const Navbar = () => {
   const [toggle, setToggle] = useState(false)
   return (
@@ -23,13 +22,15 @@ const Navbar = () => {
             Наши услуги
           </a>
           <a href={'#fag'} className='hover:text-green-700'>
-            Часто Задаваемые Вопросы
+            Частые Вопросы
           </a>
         </div>
-        <div className=''>
-          <button className='hidden md:block border border-green-600 px-4 py-1 rounded-md text-green-600 hover:bg-green-700 hover:text-white'>
-            +996 703 15 69 75
-          </button>
+        <div>
+          <a
+            href='tel: +996703156975'
+            className='hidden md:block border border-green-600 px-4 py-1 rounded-md text-green-600 hover:bg-green-700 hover:text-white'>
+            +996703156975
+          </a>
         </div>
         {toggle ? (
           <AiOutlineClose
@@ -56,19 +57,19 @@ const Navbar = () => {
           Наши услуги
         </a>
         <a href={'#fag'} className='hover:text-green-700 p-5'>
-          Часто Задаваемые Вопросы
+          Частые Вопросы
         </a>
 
         <div className='flex flex-col gap-5 items-center mt-48'>
           <div className='bg-green-600 w-[250px] h-[1px]'></div>
           <div className='flex gap-8 '>
-            <a href='/' target='_blank'>
+            <a href='tel: +996703156975'>
               <AiOutlinePhone
                 size={25}
                 className='text-green-600 hover:translate-y-1 duration-300'
               />
             </a>
-            <a href='/' target='_blank'>
+            <a href='https://wa.me/+996703156975' target='_blank'>
               <AiOutlineWhatsApp
                 size={25}
                 className='text-green-600 hover:translate-y-1 duration-300'

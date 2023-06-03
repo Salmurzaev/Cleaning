@@ -20,17 +20,17 @@ const Footer = () => {
               Наши услуги
             </a>
             <a href={'#fag'} className='hover:text-gray-800 hover:translate-y-1 duration-300'>
-              Часто Задаваемые Вопросы
+              Частые Вопросы
             </a>
           </div>
           <div className='flex  gap-x-5 items-center md:pt-16 '>
-            <a href='/' target='_blank'>
+            <a href='tel: +996703156975'>
               <AiOutlinePhone
                 size={25}
                 className='text-white hover:text-gray-800 hover:translate-y-1 duration-300'
               />
             </a>
-            <a href='/' target='_blank'>
+            <a href='https://wa.me/+996703156975' target='_blank'>
               <AiOutlineWhatsApp
                 size={25}
                 className='text-white hover:text-gray-800 hover:translate-y-1 duration-300'
