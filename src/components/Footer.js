@@ -1,5 +1,5 @@
 import React from 'react'
-import { AiOutlineInstagram, AiOutlineWhatsApp } from 'react-icons/ai'
+import { AiOutlinePhone, AiOutlineWhatsApp } from 'react-icons/ai'
 
 const Footer = () => {
   return (
@@ -25,7 +25,7 @@ const Footer = () => {
           </div>
           <div className='flex  gap-x-5 items-center md:pt-16 '>
             <a href='/' target='_blank'>
-              <AiOutlineInstagram
+              <AiOutlinePhone
                 size={25}
                 className='text-white hover:text-gray-800 hover:translate-y-1 duration-300'
               />

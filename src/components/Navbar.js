@@ -2,7 +2,7 @@
 import React, { useState } from 'react'
 import { FiMenu } from 'react-icons/fi'
 import { AiOutlineClose } from 'react-icons/ai'
-import { AiOutlineInstagram, AiOutlineWhatsApp } from 'react-icons/ai'
+import { AiOutlinePhone, AiOutlineWhatsApp } from 'react-icons/ai'
 
 const Navbar = () => {
   const [toggle, setToggle] = useState(false)
@@ -63,7 +63,7 @@ const Navbar = () => {
           <div className='bg-green-600 w-[250px] h-[1px]'></div>
           <div className='flex gap-8 '>
             <a href='/' target='_blank'>
-              <AiOutlineInstagram
+              <AiOutlinePhone
                 size={25}
                 className='text-green-600 hover:translate-y-1 duration-300'
               />

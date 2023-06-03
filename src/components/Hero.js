@@ -1,7 +1,7 @@
 import React from 'react'
 import Button from './Button'
 import Link from 'next/link'
-import { AiOutlineInstagram, AiOutlineWhatsApp } from 'react-icons/ai'
+import { AiOutlinePhone, AiOutlineWhatsApp } from 'react-icons/ai'
 const Hero = () => {
   return (
     <section id='hero'>
@@ -28,14 +28,14 @@ const Hero = () => {
               </p>
             </div>
             <div>
-              <Button link='#' text='Get started' />
+              <Button link='#' text='Заказать уборку' />
             </div>
           </div>
         </div>
         <div className='hidden absolute right-20 top-32 z-10 md:flex flex-col gap-5 items-center'>
           <div className='bg-green-600 w-[1.5px] h-[250px]'></div>
           <Link href='/' target='_blank'>
-            <AiOutlineInstagram
+            <AiOutlinePhone
               size={25}
               className='text-green-600 hover:translate-x-1 duration-300'
             />

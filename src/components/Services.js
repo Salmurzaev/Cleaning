@@ -4,38 +4,57 @@ import Card from './Card'
 const items = [
   {
     id: 0,
-    title: 'Генеральная уборка',
-    price: '60 с/м2',
+    title: 'Ежедневная уборка',
+    price: '39 с/м2',
     description: [
-      { id: 0, content: 'Tempor velit commodo est officia. Ullamco pariatur adipisicing ' },
-      { id: 1, content: 'Tempor velit commodo est officia. Ullamco pariatur adipisicing ' },
-      { id: 2, content: 'Tempor velit commodo est officia. Ullamco pariatur adipisicing ' },
-      { id: 3, content: 'Tempor velit commodo est officia. Ullamco pariatur adipisicing ' },
-      { id: 4, content: 'Tempor velit commodo est officia. Ullamco pariatur adipisicing ' }
+      { id: 0, content: '- Полы и плинтуса сухая и влажная уборка' },
+      { id: 1, content: '- Обеспыливание горизонтальных поверхностей и мебели' },
+      { id: 2, content: '- Протирка зеркал' },
+      { id: 3, content: '- Протирка дверей' },
+      { id: 4, content: '- Протирка фасадов шкафов (внутри если пустые)' },
+      { id: 5, content: '- Обезжиривание плиты' },
+      { id: 6, content: '- Мойка кухонных раковин, смесителей и посуды' },
+      { id: 7, content: '- Санузел и ванная комната' }
     ]
   },
   {
     id: 1,
-    title: 'Ежедневная уборка',
-    price: '39 с/м2',
+    title: 'Генеральная уборка',
+    price: '60 с/м2',
     description: [
-      { id: 0, content: 'Tempor velit commodo est officia. Ullamco pariatur adipisicing ' },
-      { id: 1, content: 'Tempor velit commodo est officia. Ullamco pariatur adipisicing ' },
-      { id: 2, content: 'Tempor velit commodo est officia. Ullamco pariatur adipisicing ' },
-      { id: 3, content: 'Tempor velit commodo est officia. Ullamco pariatur adipisicing ' },
-      { id: 4, content: 'Tempor velit commodo est officia. Ullamco pariatur adipisicing ' }
+      { id: 0, content: '- Полы и плинтуса сухая и влажная уборка' },
+      { id: 1, content: '- Обеспыливание всех поверхностей' },
+      { id: 2, content: '- Чистка зеркал' },
+      { id: 3, content: '- Обеспыливание световых приборов (люстры, светильники' },
+      { id: 4, content: '- Протирка дверей' },
+      { id: 5, content: '- Обеспыливание фасадов шкафов' },
+      { id: 6, content: '- Протирка полок хранения' },
+      { id: 7, content: '- Мойка и обезжиривание фасадов кухонных шкафов, столешницы и фартука ' },
+      { id: 8, content: '- Мойка кухонных раковин, смесителей и посуды' },
+      { id: 9, content: '- Санузел и ванная комната (моем полностью со стенами' }
     ]
   },
+
   {
     id: 2,
     title: 'Уборка после ремонта',
     price: '80 с/м2',
     description: [
-      { id: 0, content: 'Tempor velit commodo est officia. Ullamco pariatur adipisicing ' },
-      { id: 1, content: 'Tempor velit commodo est officia. Ullamco pariatur adipisicing ' },
-      { id: 2, content: 'Tempor velit commodo est officia. Ullamco pariatur adipisicing ' },
-      { id: 3, content: 'Tempor velit commodo est officia. Ullamco pariatur adipisicing ' },
-      { id: 4, content: 'Tempor velit commodo est officia. Ullamco pariatur adipisicing ' }
+      { id: 0, content: '- Комнаты и коридоры' },
+      {
+        id: 1,
+        content:
+          '- Удаление строительной пыли и сложных загрязнений со всех поверхностей на всю высоту помещения.'
+      },
+      { id: 2, content: '- Кухня' },
+      { id: 3, content: '- Мытьё кухонного гарнитура, бытовой техники, удаление следов ремонта.' },
+      { id: 4, content: '- Ванная комната' },
+      {
+        id: 5,
+        content:
+          '- Очистка и дезинфекция сантехники. Мытьё плитки и потолков, очистка швов на всю высоту помещения.'
+      },
+      { id: 6, content: '- Уборка после ремонта содержит более 45 видов работ.' }
     ]
   }
 ]
