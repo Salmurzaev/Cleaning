@@ -48,41 +48,46 @@ const items = [
 
 const Fag = () => {
   return (
-    <section id='fag' className='mx-auto px-4 py-10 bg-slate-100'>
-      <Headline title={'Часто задаваемые вопросы'} />
-      <div className='max-w-screen-xl mx-auto px-5 bg-white min-h-sceen rounded-lg'>
-        <div className='grid divide-y divide-neutral-200 max-w-xl mx-auto mt-8'>
-          <div className='py-8'>
-            {items.map(el => (
-              <>
-                <details className='group hover:bg-slate-200 p-2 rounded-md' key={el.id}>
-                  <summary className='flex justify-between items-center font-medium cursor-pointer list-none'>
+    <section id="fag" className="mx-auto px-4 py-10 bg-slate-100">
+      <Headline title={"Частые Вопросы"} />
+      <div className="max-w-screen-xl mx-auto px-5 bg-white min-h-sceen rounded-lg">
+        <div className="grid divide-y divide-neutral-200 max-w-xl mx-auto mt-8">
+          <div className="py-8">
+            {items.map((el) => (
+              <div key={el.id}>
+                <details
+                  className="group hover:bg-slate-200 p-2 rounded-md"
+                >
+                  <summary className="flex justify-between items-center font-medium cursor-pointer list-none">
                     <span> {el.question}</span>
-                    <span className='transition group-open:rotate-180'>
+                    <span className="transition group-open:rotate-180">
                       <svg
-                        fill='none'
-                        height='24'
-                        shapeRendering='geometricPrecision'
-                        stroke='currentColor'
-                        strokeLinecap='round'
-                        strokeLinejoin='round'
-                        strokeWidth='1.5'
-                        viewBox='0 0 24 24'
-                        width='24'>
-                        <path d='M6 9l6 6 6-6'></path>
+                        fill="none"
+                        height="24"
+                        shapeRendering="geometricPrecision"
+                        stroke="currentColor"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth="1.5"
+                        viewBox="0 0 24 24"
+                        width="24"
+                      >
+                        <path d="M6 9l6 6 6-6"></path>
                       </svg>
                     </span>
                   </summary>
-                  <p className='text-neutral-600 mt-3 group-open:animate-fadeIn'>{el.answer}</p>
+                  <p className="text-neutral-600 mt-3 group-open:animate-fadeIn">
+                    {el.answer}
+                  </p>
                 </details>
-                <div className='h-1 w-full mx-auto border-b my-5'></div>
-              </>
+                <div className="h-1 w-full mx-auto border-b my-5"></div>
+              </div>
             ))}
           </div>
         </div>
       </div>
     </section>
-  )
+  );
 }
 
 export default Fag
