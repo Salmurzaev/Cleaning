@@ -10,19 +10,19 @@ const Hero = () => {
         <div className='text-center text-white flex flex-col gap-[20px] md:gap-[40px]'>
           <div>
             <h1 className='text-2xl md:text-3xl lg:text-4xl font-semibold tracking-wider'>
-              Мы убираем. Вы отдыхаете.
+              Вам нужен клининг от профессионалов? Ваша чистота - это наша забота!
             </h1>
           </div>
           <div>
             <h1 className='text-2xl md:text-3xl lg:text-4xl font-semibold tracking-wider'>
-              <span className='text-green-600'> Professional </span> Cleaning Services
+              <span className='text-green-600'> Профессиональная </span> уборка в Бишкеке
             </h1>
           </div>
           <div className='mx-auto bg-green-800 h-[2px] w-[150px]'></div>
           <div>
             <p className='text-sm md:text-xl text-gray-300 tracking-widest'>
               <span className='italic'>Clean </span>
-              <span className='italic text-green-600'>House </span>
+              <span className='italic text-green-600'>Time </span>
               <span className='italic'>Самый лучший Сервис</span>
             </p>
           </div>

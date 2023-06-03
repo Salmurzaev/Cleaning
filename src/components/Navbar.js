@@ -12,8 +12,10 @@ const Navbar = () => {
     <header className='fixed bg-white top-0 w-[100%] z-20 shadow-md'>
       <div className='container mx-auto flex justify-between items-center px-4 py-4'>
         <div className='flex gap-1 items-center text-xl  md:text-2xl font-bold'>
-          <span className='italic'>Clean </span>
-          <span className='italic text-green-600'>House</span>
+          <Link href={'/'}>
+            <span className='italic'>Clean </span>
+            <span className='italic text-green-600'>Time</span>
+          </Link>
         </div>
         <div className='hidden md:flex justify-around gap-6 tracking-wider text-gray-600'>
           <Link href={'/'} className='hover:text-green-700'>
@@ -25,9 +27,7 @@ const Navbar = () => {
           <Link href={'/'} className='hover:text-green-700'>
             Прайс лист
           </Link>
-          <Link href={'/'} className='hover:text-green-700'>
-            Контакты
-          </Link>
+         
         </div>
         <div className=''>
           <button className='hidden md:block border border-green-600 px-4 py-1 rounded-md text-green-600 hover:bg-green-700 hover:text-white'>
@@ -41,7 +41,11 @@ const Navbar = () => {
             size={28}
           />
         ) : (
-          <FiMenu onClick={() => setToggle(!toggle)} className='md:hidden block cursor-pointer' size={28} />
+          <FiMenu
+            onClick={() => setToggle(!toggle)}
+            className='md:hidden block cursor-pointer'
+            size={28}
+          />
         )}
       </div>
       {/* Responsive menu */}
@@ -57,9 +61,7 @@ const Navbar = () => {
         <Link href={'/'} className='hover:text-green-700 p-5'>
           Прайс лист
         </Link>
-        <Link href={'/'} className='hover:text-green-700 p-5'>
-          Контакты
-        </Link>
+      
         <div className='flex flex-col gap-5 items-center mt-48'>
           <div className='bg-green-600 w-[250px] h-[1px]'></div>
           <div className='flex gap-8 '>
