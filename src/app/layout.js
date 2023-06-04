@@ -11,6 +11,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang='en' className='smooth-scroll'>
+      <head>
+        <meta name='yandex-verification' content='eadec537f5210cf4' />
+      </head>
       <body suppressHydrationWarning={true}>
         {children}
         <Analytics />
