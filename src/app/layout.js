@@ -8,8 +8,7 @@ export const metadata = {
   title: 'Уборка и клининг в Бишкеке по цене от 39 сом за м2',
   description:
     'Клининговая компания «Clean Time осуществляет услуги по уборке квартир, офисов, коттеджей, загородных домов, и помещений различного назначения в Бишкеке. Вы можете сделать заказ на профессиональный клининг у нас на сайте или позвонить по телефону.',
-  keywords: 'уборка квартир, клининг бишкек, заказать клининг, доступная цена',
-  'yandex-verification': 'eadec537f5210cf4'
+  keywords: 'уборка квартир, клининг бишкек, заказать клининг, доступная цена'
 }
 
 export default function RootLayout({ children }) {
@@ -18,6 +17,11 @@ export default function RootLayout({ children }) {
       <body className={inter.className} suppressHydrationWarning={true}>
         {children}
         <Analytics />
+        <script async src='https://www.googletagmanager.com/gtag/js?id=G-X3PKPX3Z5D'></script>
+        <script>
+          window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments)}
+          gtag('js', new Date()); gtag('config', 'G-X3PKPX3Z5D');
+        </script>
       </body>
     </html>
   )
