@@ -12,8 +12,12 @@ export default function RootLayout({ children }) {
   return (
     <html lang='ru' className='smooth-scroll'>
       <head>
+        <link rel='icon' href='/favicon.ico' />
         <meta name='yandex-verification' content='1fc83d52eaea0baf' />
-        <meta name="google-site-verification" content="t1gmgt73XaEif-4BgxAu43ZldebCRbWtg7SLw0bQwRc" />
+        <meta
+          name='google-site-verification'
+          content='t1gmgt73XaEif-4BgxAu43ZldebCRbWtg7SLw0bQwRc'
+        />
       </head>
       <body suppressHydrationWarning={true}>
         {children}
