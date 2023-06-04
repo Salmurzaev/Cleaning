@@ -5,7 +5,6 @@ import Hero from '@/components/Hero'
 import Navbar from '@/components/Navbar'
 import OrderForm from '@/components/OrderForm'
 import Services from '@/components/Services'
-import Head from 'next/head'
 import { useState } from 'react'
 import { AiFillMessage } from 'react-icons/ai'
 
@@ -13,9 +12,6 @@ export default function Home() {
   const [isShowModal, setIsShowModal] = useState(false)
   return (
     <>
-      <Head>
-        <meta name='yandex-verification' content='eadec537f5210cf4' />
-      </Head>
       <Navbar />
       <main>
         <Hero isShowModal={isShowModal} setIsShowModal={setIsShowModal} />

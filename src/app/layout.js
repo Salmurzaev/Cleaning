@@ -1,6 +1,7 @@
 import '../styles/globals.css'
 import { Inter } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/react'
+import Script from 'next/script'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -13,15 +14,26 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang='ru' className='smooth-scroll'>
+    <html lang='en' className='smooth-scroll'>
+      <head>
+        <Script
+          src='https://www.googletagmanager.com/gtag/js?id=G-X3PKPX3Z5D'
+          strategy='afterInteractive'
+        />
+        <Script id='google-analytics' strategy='afterInteractive'>
+          {`
+         window.dataLayer = window.dataLayer || [];
+         function gtag(){dataLayer.push(arguments);}
+         gtag('js', new Date());
+       
+         gtag('config', 'G-X3PKPX3Z5D');
+        `}
+        </Script>
+        <meta name='yandex-verification' content='eadec537f5210cf4' />
+      </head>
       <body className={inter.className} suppressHydrationWarning={true}>
         {children}
         <Analytics />
-        <script async src='https://www.googletagmanager.com/gtag/js?id=G-X3PKPX3Z5D'></script>
-        <script>
-          window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments)}
-          gtag('js', new Date()); gtag('config', 'G-X3PKPX3Z5D');
-        </script>
       </body>
     </html>
   )
