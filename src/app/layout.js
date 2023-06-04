@@ -13,6 +13,7 @@ export default function RootLayout({ children }) {
     <html lang='ru' className='smooth-scroll'>
       <head>
         <meta name='yandex-verification' content='1fc83d52eaea0baf' />
+        <meta name="google-site-verification" content="t1gmgt73XaEif-4BgxAu43ZldebCRbWtg7SLw0bQwRc" />
       </head>
       <body suppressHydrationWarning={true}>
         {children}
