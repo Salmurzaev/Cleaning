@@ -29,8 +29,8 @@ const Hero = ({ setIsShowModal }) => {
                 <span className="italic">Самый лучший Сервис</span>
               </p>
             </div>
-            <div onClick={() => setIsShowModal(true)}>
-              <Button link="#" text="Заказать уборку" />
+            <div>
+              <Button link="tel: +996703156975" text="Позвонить" />
             </div>
           </div>
         </div>
