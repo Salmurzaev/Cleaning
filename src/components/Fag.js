@@ -6,7 +6,7 @@ const items = [
     id: 0,
     question:
       'Можно ли заказать уборку в выборочных местах квартиры? Если, например, у меня «двушка», но одна комната закрыта ?',
-    answer: `Можно. Стоимость уборки будет рассчитана исходя из фактического количество комнат, в которых будем убираться.`
+    answer: `Можно. Стоимость уборки будет рассчитана исходя из квадрадных метров помещений, в которых будем убираться.`
   },
   {
     id: 1,
@@ -37,57 +37,46 @@ const items = [
     id: 5,
     question: 'Как заказать уборку ?',
     answer: 'Закажите обратный звонок или же позвоните нам.'
-  },
-  {
-    id: 6,
-    question: 'Сколько времени требуется на уборку? ',
-    answer:
-      'Обычно на уборку требуется от 2-х до 6-ти часов, в зависимости от размера квартиры и конкретных задач.'
   }
 ]
 
 const Fag = () => {
   return (
-    <section id="fag" className="mx-auto px-4 py-10 bg-slate-100">
-      <Headline title={"Частые Вопросы"} />
-      <div className="max-w-screen-xl mx-auto px-5 bg-white min-h-sceen rounded-lg">
-        <div className="grid divide-y divide-neutral-200 max-w-xl mx-auto mt-8">
-          <div className="py-8">
-            {items.map((el) => (
+    <section id='fag' className='mx-auto px-4 py-10 bg-slate-100'>
+      <Headline title={'Частые Вопросы'} />
+      <div className='max-w-screen-xl mx-auto px-5 bg-white min-h-sceen rounded-lg'>
+        <div className='grid divide-y divide-neutral-200 max-w-xl mx-auto mt-8'>
+          <div className='py-8'>
+            {items.map(el => (
               <div key={el.id}>
-                <details
-                  className="group hover:bg-slate-200 p-2 rounded-md"
-                >
-                  <summary className="flex justify-between items-center font-medium cursor-pointer list-none">
+                <details className='group hover:bg-slate-200 p-2 rounded-md'>
+                  <summary className='flex justify-between items-center font-medium cursor-pointer list-none'>
                     <span> {el.question}</span>
-                    <span className="transition group-open:rotate-180">
+                    <span className='transition group-open:rotate-180'>
                       <svg
-                        fill="none"
-                        height="24"
-                        shapeRendering="geometricPrecision"
-                        stroke="currentColor"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth="1.5"
-                        viewBox="0 0 24 24"
-                        width="24"
-                      >
-                        <path d="M6 9l6 6 6-6"></path>
+                        fill='none'
+                        height='24'
+                        shapeRendering='geometricPrecision'
+                        stroke='currentColor'
+                        strokeLinecap='round'
+                        strokeLinejoin='round'
+                        strokeWidth='1.5'
+                        viewBox='0 0 24 24'
+                        width='24'>
+                        <path d='M6 9l6 6 6-6'></path>
                       </svg>
                     </span>
                   </summary>
-                  <p className="text-neutral-600 mt-3 group-open:animate-fadeIn">
-                    {el.answer}
-                  </p>
+                  <p className='text-neutral-600 mt-3 group-open:animate-fadeIn'>{el.answer}</p>
                 </details>
-                <div className="h-1 w-full mx-auto border-b my-5"></div>
+                <div className='h-1 w-full mx-auto border-b my-5'></div>
               </div>
             ))}
           </div>
         </div>
       </div>
     </section>
-  );
+  )
 }
 
 export default Fag
