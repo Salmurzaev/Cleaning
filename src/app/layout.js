@@ -1,9 +1,5 @@
 import '../styles/globals.css'
-import { Inter } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/react'
-import Script from 'next/script'
-
-const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
   title: 'Уборка и клининг в Бишкеке по цене от 39 сом за м2',
@@ -15,11 +11,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang='en' className='smooth-scroll'>
-      <head>
-     
-        <meta name='yandex-verification' content='eadec537f5210cf4' />
-      </head>
-      <body className={inter.className} suppressHydrationWarning={true}>
+      <body suppressHydrationWarning={true}>
         {children}
         <Analytics />
       </body>
