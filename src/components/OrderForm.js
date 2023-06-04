@@ -3,7 +3,7 @@ import axios from 'axios'
 import ReactPhoneInput from 'react-phone-input-2'
 import 'react-phone-input-2/lib/style.css'
 
-export default function OrderForm({ setIsShowModal }) {
+export default function OrderForm({ setIsShowModal, setIsShowSnackBar }) {
   const invalid = 'text-red-500 text-xs italic mt-2'
   const [phoneNumber, setPhoneNumber] = useState('')
   const [name, setName] = useState('')
@@ -17,16 +17,18 @@ export default function OrderForm({ setIsShowModal }) {
       setPhoneNumberValid(false)
     } else {
       setPhoneNumberValid(true)
-      axios
-        .post('https://sec-order-27uv8ql1m-aidar41k.vercel.app', {
-          phoneNumber,
-          name
-        })
-        .then(res => console.log(res))
+      axios.post('https://sec-order-27uv8ql1m-aidar41k.vercel.app', {
+        phoneNumber,
+        name
+      })
       setPhoneNumberValid(true)
       setIsShowModal(false)
       setPhoneNumber('')
       setName('')
+      setIsShowSnackBar(true)
+      setTimeout(() => {
+        setIsShowSnackBar(false)
+      }, 3000)
     }
   }
 
@@ -52,7 +54,7 @@ export default function OrderForm({ setIsShowModal }) {
               <div className='justify-center flex pb-6'>
                 <a
                   href='tel: +996703156975'
-                  className='hidden md:block border border-green-600 px-4 py-1 rounded-md text-green-600 hover:bg-green-700 hover:text-white'>
+                  className='border border-green-600 px-4 py-1 rounded-md text-green-600 hover:bg-green-700 hover:text-white'>
                   +996703156975
                 </a>
               </div>

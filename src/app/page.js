@@ -5,12 +5,15 @@ import Hero from '@/components/Hero'
 import Navbar from '@/components/Navbar'
 import OrderForm from '@/components/OrderForm'
 import Services from '@/components/Services'
+import SnackBar from '@/components/SnackBar'
 import Script from 'next/script'
 import { useState } from 'react'
 import { AiFillMessage } from 'react-icons/ai'
 
 export default function Home() {
   const [isShowModal, setIsShowModal] = useState(false)
+  const [isShowSnackBar, setIsShowSnackBar] = useState(false)
+
   return (
     <>
       <Script
@@ -33,7 +36,13 @@ export default function Home() {
         <Fag />
       </main>
       <Footer />
-      {isShowModal && <OrderForm isShowModal={isShowModal} setIsShowModal={setIsShowModal} />}
+      {isShowModal && (
+        <OrderForm
+          isShowModal={isShowModal}
+          setIsShowModal={setIsShowModal}
+          setIsShowSnackBar={setIsShowSnackBar}
+        />
+      )}
       <AiFillMessage
         onClick={() => setIsShowModal(true)}
         size='40px'
@@ -45,6 +54,7 @@ export default function Home() {
           cursor: 'pointer'
         }}
       />
+      {isShowSnackBar && <SnackBar />}
     </>
   )
 }
